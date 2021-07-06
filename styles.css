@@ -130,3 +130,25 @@ td {
     justify-content: center;
     margin-bottom: 50px;
 }
+
+/* Team container */
+.team {
+    display: flex;
+}
+
+.images{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.images div {
+    width: 600px;
+    max-height: 600px;
+    margin: 30px 0 30px 100px;
+}
+
+.team img {
+    max-width: 100%;
+    max-height: 100%;
+}
