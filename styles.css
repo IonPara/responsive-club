@@ -2,6 +2,8 @@ html, body {
     margin: 0;
     font-size: 16px;
     font-family: 'Bona Nova', serif;
+    background-color:black;
+    color:white;
 }
 
 /*Header Container*/
@@ -64,7 +66,7 @@ main img {
 h1 {
     display: flex;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid white;
     font-family: 'Playfair Display', serif;
     font-size: 3em;
 }
@@ -151,4 +153,30 @@ td {
 .team img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 4%;
+}
+
+/*Map container */
+
+.map {
+    width: 500px;
+    height: 500px;
+}
+
+.map img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+
+.details {
+    display:flex;
+    flex-direction: column;
 }
