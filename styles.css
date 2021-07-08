@@ -4,6 +4,8 @@ html, body {
     font-family: 'Bona Nova', serif;
     background-color:black;
     color:white;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /*Header Container*/
