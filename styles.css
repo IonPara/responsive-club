@@ -45,6 +45,60 @@ a:hover {
     margin-left: 10em;
 }
 
+
+
+
+@media only screen and (max-width: 1025px) {
+    header {
+     height: 80px;  
+    }
+
+    a {
+        margin-top: 30px;
+        font-size: 1.3rem;
+    }
+
+    .logo img {
+        margin-left: 2em;
+    }
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+
+     min-height: 14.5rem;
+     width: 10rem;
+     position: absolute;
+    }
+    .logo {
+
+        display: none;
+    }
+
+    .nav-bar {
+        margin-left: 2rem;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        width: 6rem;
+    }
+
+    .nav-bar {
+        margin-left: 0.5rem ;
+    }
+
+    a {
+        font-size: 1.2rem;
+    }
+}
+
+
 /* Main Container*/
 
 main {
@@ -61,6 +115,25 @@ main img {
     border-radius: 50%;
 }
 
+@media only screen and (max-width: 800px) {
+    main {
+        padding-top: 80px;
+        height: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        height: 150px;
+    }
+
+    main img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+}
 /* Classes container */
 
 h1 {
@@ -108,6 +181,44 @@ h1 {
     padding: 10px
 }
 
+@media only screen and (max-width: 800px) {
+    .classes {
+
+        font-size: 0.9rem;
+    }
+
+    .bjj, .no-gi, .boxing {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .classes {
+
+        font-size: 0.6rem;
+    }
+
+    .bjj, .no-gi, .boxing {
+        margin-right: 1.8rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+}   
+
+@media only screen and (max-width: 400px) {
+     .classes {
+         flex-direction: column;
+     }
+}
+
 /* Timetable container */
 
 table, th, td {
@@ -133,6 +244,12 @@ td {
     margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 600px) {
+    th, td {
+        font-size: 1rem;
+    }
+}
+
 /* Team container */
 .team {
     display: flex;
@@ -156,6 +273,62 @@ td {
     border-radius: 4%;
 }
 
+.phrase {
+    display: flex;
+    justify-content: center;
+    color:brown;
+}
+
+.phrase h3 {
+    width: 50rem;
+    text-align: center;
+    height: 5rem;
+    border-radius: 6%;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .images div {
+        width: 20rem;
+        max-height: 20rem;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .images div {
+        margin-left: 2.5rem;
+    }
+    .phrase h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .images div {
+        width: 15rem;
+        max-height: 15rem;
+    }
+
+    .phrase h3 {
+        font-size: 1.2rem;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .images {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        
+    }
+
+}
+
 /*Map container */
 
 .map {
@@ -166,6 +339,7 @@ td {
 .map img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 4%;
 }
 
 .contact {
@@ -179,4 +353,34 @@ td {
 .details {
     display:flex;
     flex-direction: column;
+    text-align: center;
+    font-family: Playfair;
+}
+
+i {
+    color:brown;
+    font-size: 1.5rem;
+}
+
+.facebook i {
+    font-size: 3rem;
+}
+
+/* Footer container*/
+
+.footer {
+    height: 60px;
+    width: 100%;
+    background-color:rgb(0, 174, 255);
+}
+
+.footer .nav-bar:first-child {
+    margin-left: 20px;
+}
+
+@media only  screen and (max-width: 600px) {
+    .footer {
+        display:none;
+    }
+    
 }
